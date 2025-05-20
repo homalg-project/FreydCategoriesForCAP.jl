@@ -764,6 +764,11 @@ end );
         SetRangeCategoryOfHomomorphismStructure( category, rows );
         SetIsEquippedWithHomomorphismStructure( category, true );
         
+        if (HasIsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms( rows ) &&
+           IsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms( rows ))
+            SetIsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms( category, true );
+        end;
+        
         t_obj = CategoryOfRowsObject( rows, 1 );
         
         t_finsets = TerminalObject( finsets );
