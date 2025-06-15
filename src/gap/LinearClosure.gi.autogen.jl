@@ -93,6 +93,12 @@
     
     SetUnderlyingCategory( category, underlying_category );
     
+    if (HasIsObjectFiniteCategory( underlying_category ) && IsObjectFiniteCategory( underlying_category ))
+        
+        SetIsObjectFiniteCategory( category, true );
+        
+    end;
+    
     INSTALL_FUNCTIONS_FOR_LINEAR_CLOSURE( rows, category );
     
     Finalize( category );
@@ -741,6 +747,19 @@ end );
             function( cat, alpha, i )
                 
                 return LINEAR_CLOSURE_MORPHISM_SIMPLIFY( alpha );
+                
+        end );
+        
+    end;
+    
+    if (HasIsObjectFiniteCategory( underlying_category ) && IsObjectFiniteCategory( underlying_category ))
+        
+        ##
+        AddSetOfObjectsOfCategory( category,
+            function( cat )
+                
+                return List( SetOfObjectsOfCategory( underlying_category ),
+                             obj -> LinearClosureObject( category, obj ) );
                 
         end );
         

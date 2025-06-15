@@ -6,7 +6,7 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>",
 ]
 
-version = "0.1.8"
+version = "0.1.9"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
@@ -25,7 +25,7 @@ FreydCategoriesForCAPFinSetsForCAPExtension = ["CartesianCategories", "Toposes",
 [compat]
 julia = "1.11"
 MatricesForHomalg = "0.1"
-CAP = "0.5.2"
+CAP = "0.6"
 MonoidalCategories = "0.1, 0.2"
 LinearAlgebraForCAP = "0.1"
 CartesianCategories = "0.1, 0.2, 0.3"

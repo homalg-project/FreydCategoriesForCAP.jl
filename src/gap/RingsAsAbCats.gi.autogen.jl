@@ -40,6 +40,8 @@
     
     SetIsAbCategory( category, true );
     
+    SetIsObjectFiniteCategory( category, true );
+    
     if (HasIsCommutative( ring ) && IsCommutative( ring ))
         
         SetIsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms( category, true );
@@ -201,6 +203,14 @@ end );
             category,
             One( UnderlyingRing( cat ) )
         );
+        
+    end );
+    
+    ##
+    AddSetOfObjectsOfCategory( category,
+      function( cat )
+        
+        return [ RingAsCategoryUniqueObject( cat ) ];
         
     end );
     

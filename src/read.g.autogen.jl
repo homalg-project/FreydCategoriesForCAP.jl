@@ -29,6 +29,7 @@ include( "gap/CoFreydCategory.gi.autogen.jl" );
 include( "gap/CoFreydCategory_as_Opposite_FreydCategory_Opposite.gi.autogen.jl" );
 
 include( "gap/AdditiveClosure.gi.autogen.jl" );
+include( "gap/AdditiveClosureDerivedMethods.gi.autogen.jl" );
 
 include( "gap/CokernelImageClosure.gi.autogen.jl" );
 
