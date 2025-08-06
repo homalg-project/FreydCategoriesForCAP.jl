@@ -1,18 +1,21 @@
 name = "FreydCategoriesForCAP"
 uuid = "cec356e3-7627-4f73-8308-af32cbf46c2b"
 authors = [
-	"Sebastian Posur <sebastian.posur@uni-muenster.de>",
+	"Sebastian Posur <sebastian.posur@uni-siegen.de>",
 	"Martin Bies <martin.bies@alumni.uni-heidelberg.de>",
-	"Fabian Zickgraf <f.zickgraf@dashdos.com>",
+	"Fabian Zickgraf <fabian.zickgraf@uni-siegen.de>"
 ]
 
-version = "0.1.10"
+# Transpiled from GAP's FreydCategoriesForCAP v2025.07-02
+version = "0.1.11"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
 CAP = "d64df2ee-d2bb-46f4-8cbc-f03bb858f8cb"
 MonoidalCategories = "bfd98c86-782f-4b94-909f-74167f1eb613"
 LinearAlgebraForCAP = "3dc4824f-14ac-4ab7-8a60-75dbcd4a9d60"
+AdditiveClosuresForCAP = "bbee75d5-3cb4-4478-8ae7-eddc7864e69e"
+LinearClosuresForCAP = "1f080b7b-ff6a-46b3-9ade-986f655adc86"
 
 [weakdeps]
 CartesianCategories = "c5961c08-7b59-43f4-a15e-02b3e7c87ab8"
@@ -28,13 +31,15 @@ MatricesForHomalg = "0.1"
 CAP = "0.6"
 MonoidalCategories = "0.1, 0.2"
 LinearAlgebraForCAP = "0.1"
+AdditiveClosuresForCAP = "0.1"
+LinearClosuresForCAP = "0.1"
 CartesianCategories = "0.1, 0.2, 0.3"
 Toposes = "0.1"
 FinSetsForCAP = "0.1"
 
 [extras]
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 CartesianCategories = "c5961c08-7b59-43f4-a15e-02b3e7c87ab8"
 Toposes = "36a15fe6-6211-457f-8fdb-aa2e0d2f3052"
 FinSetsForCAP = "0a079e9b-4bc2-44fe-a89b-7607e4464786"

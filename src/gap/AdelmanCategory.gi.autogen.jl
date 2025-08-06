@@ -1014,7 +1014,7 @@ end );
   function( functor ) 
     local source, range, induced_functor;
     
-    range = AsCapCategory( Range( functor ) );
+    range = RangeOfFunctor( functor );
     
     if (!( HasIsAbelianCategory( range ) && IsAbelianCategory( range ) ))
         
@@ -1028,7 +1028,7 @@ end );
         
     end;
     
-    source = AdelmanCategory( AsCapCategory( Source( functor ) ) );
+    source = AdelmanCategory( SourceOfFunctor( functor ) );
     
     induced_functor =
         CapFunctor( 

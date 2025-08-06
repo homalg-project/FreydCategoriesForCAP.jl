@@ -5,5 +5,7 @@ opts_dict[:warn_overwrite] = 0
 new_opts = Base.JLOptions(getindex.(Ref(opts_dict), Symbol.(fieldnames(Base.JLOptions)))...)
 unsafe_store!(Base.cglobal(:jl_options, Base.JLOptions), new_opts)
 
-using Test, Documenter, FinSetsForCAP, FreydCategoriesForCAP
-doctest(FreydCategoriesForCAP)
+using Test, Documenter, CartesianCategories, Toposes, FinSetsForCAP, FreydCategoriesForCAP
+
+# test upto whitespaces
+doctest(FreydCategoriesForCAP; doctestfilters=[r"\s+" => ""])

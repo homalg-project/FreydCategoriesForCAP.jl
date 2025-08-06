@@ -9,9 +9,9 @@
 
 <!-- END HEADER -->
 
-This is the Julia version of the [CAP-based][CAP_project] package [FreydCategoriesForCAP][FreydCategoriesForCAP].
+This is the Julia version of the [CAP-based][CAP_based] package [FreydCategoriesForCAP][FreydCategoriesForCAP].
 
-[CAP_project]: https://homalg-project.github.io/docs/CAP_project-based/
+[CAP_based]: https://homalg-project.github.io/docs/CAP_project-based/
 [FreydCategoriesForCAP]: https://homalg-project.github.io/pkg/FreydCategoriesForCAP
 
 <!-- BEGIN FOOTER -->

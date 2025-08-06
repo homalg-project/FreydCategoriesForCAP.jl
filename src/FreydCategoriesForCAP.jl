@@ -8,7 +8,11 @@ using CAP
 
 using MonoidalCategories
 
-using LinearAlgebraForCAP # this is not a GAP dependency but needed for various declarations not (yet) part of MatricesForHomalg
+using LinearAlgebraForCAP
+
+using AdditiveClosuresForCAP
+
+using LinearClosuresForCAP
 
 include("init.jl")
 
