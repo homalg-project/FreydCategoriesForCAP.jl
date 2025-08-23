@@ -12,8 +12,6 @@
 
 @DeclareInfoClass( "InfoFreydCategoriesForCAP" );
 
-
-
 ####################################
 ##
 ## Constructors
@@ -27,7 +25,7 @@
     [ "FinalizeCategory", true ],
   ],
   function( CAP_NAMED_ARGUMENTS, underlying_category )
-    local name, freyd_category, commutative_ring, conditions;
+    local name, freyd_category, commutative_ring;
     
     if (@not IsValidInputForFreydCategory( underlying_category ))
         return false;
@@ -86,38 +84,24 @@
     
     end;
     
-    conditions = [ "TensorProductOnObjects",
-                    "TensorProductOnMorphismsWithGivenTensorProducts",
-                    "TensorUnit",
-                    "AssociatorLeftToRightWithGivenTensorProducts",
-                    "AssociatorRightToLeftWithGivenTensorProducts",
-                    "LeftUnitorWithGivenTensorProduct",
-                    "LeftUnitorInverseWithGivenTensorProduct",
-                    "RightUnitorWithGivenTensorProduct",
-                    "RightUnitorInverseWithGivenTensorProduct" ];
-    
-    if (ForAll( conditions, f -> CanCompute( underlying_category, f ) ))
-      
-      SetIsMonoidalCategory( freyd_category, true );
-    
+    if (HasIsAdditiveMonoidalCategory( underlying_category ) && IsAdditiveMonoidalCategory( underlying_category ))
+        
+        SetIsAdditiveMonoidalCategory( freyd_category, true );
+        
+    elseif (HasIsMonoidalCategory( underlying_category ) && IsMonoidalCategory( underlying_category ))
+        
+        SetIsMonoidalCategory( freyd_category, true );
+        
     end;
     
-    conditions = @Concatenation( conditions, [ "BraidingWithGivenTensorProducts" ] );
-    if (ForAll( conditions, f -> CanCompute( underlying_category, f ) ))
-      
-      SetIsSymmetricMonoidalCategory( freyd_category, true );
-    
-    end;
-    
-    conditions = @Concatenation( conditions, [ "InternalHomOnMorphismsWithGivenInternalHoms",
-                                                "ProjectionOfBiasedWeakFiberProduct",
-                                                "UniversalMorphismIntoBiasedWeakFiberProduct",
-                                                "ClosedMonoidalLeftEvaluationMorphismWithGivenSource",
-                                                "ClosedMonoidalLeftCoevaluationMorphismWithGivenRange" ] );
-    if (ForAll( conditions, f -> CanCompute( underlying_category, f ) ))
-      
-      SetIsSymmetricClosedMonoidalCategory( freyd_category, true );
-    
+    if (HasIsSymmetricClosedMonoidalCategory( underlying_category ) && IsSymmetricClosedMonoidalCategory( underlying_category ))
+        
+        SetIsSymmetricClosedMonoidalCategory( freyd_category, true );
+        
+    elseif (HasIsSymmetricMonoidalCategory( underlying_category ) && IsSymmetricMonoidalCategory( underlying_category ))
+        
+        SetIsSymmetricMonoidalCategory( freyd_category, true );
+        
     end;
     
     # is a Freyd category always not a strict monoidal category?
