@@ -1,12 +1,12 @@
 name = "FreydCategoriesForCAP"
 uuid = "cec356e3-7627-4f73-8308-af32cbf46c2b"
 authors = [
-	"Sebastian Posur <sebastian.posur@uni-siegen.de>",
-	"Martin Bies <martin.bies@alumni.uni-heidelberg.de>",
-	"Fabian Zickgraf <fabian.zickgraf@uni-siegen.de>"
+	"Sebastian Posur <sebastian.posur@uni-muenster.de>",
+	"Martin Bies <martin.bies@rptu.de>",
+	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's FreydCategoriesForCAP v2025.08-01
+# Transpiled from GAP's FreydCategoriesForCAP v2025.08-02
 version = "0.1.12"
 
 [deps]
