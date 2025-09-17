@@ -7,5 +7,4 @@ unsafe_store!(Base.cglobal(:jl_options, Base.JLOptions), new_opts)
 
 using Test, Documenter, CartesianCategories, Toposes, FinSetsForCAP, FreydCategoriesForCAP
 
-# test upto whitespaces
-doctest(FreydCategoriesForCAP; doctestfilters=[r"\s+" => ""])
+doctest(FreydCategoriesForCAP)
