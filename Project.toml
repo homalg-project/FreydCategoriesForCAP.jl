@@ -6,8 +6,8 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's FreydCategoriesForCAP v2025.08-02
-version = "0.1.13"
+# Transpiled from GAP's FreydCategoriesForCAP v2025.12-02
+version = "0.1.14"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
