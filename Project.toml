@@ -7,7 +7,7 @@ authors = [
 ]
 
 # Transpiled from GAP's FreydCategoriesForCAP v2025.12-02
-version = "0.1.15"
+version = "0.1.16"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
@@ -35,7 +35,7 @@ AdditiveClosuresForCAP = "~0.1.2"
 LinearClosuresForCAP = "0.1"
 CartesianCategories = "0.1, 0.2, 0.3"
 Toposes = "0.1"
-FinSetsForCAP = "0.2"
+FinSetsForCAP = "0.3"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
