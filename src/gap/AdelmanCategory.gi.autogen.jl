@@ -61,11 +61,11 @@
     
     if (HasIsLinearCategoryOverCommutativeRing( underlying_category ) &&
        IsLinearCategoryOverCommutativeRing( underlying_category ) &&
-       HasCommutativeRingOfLinearCategory( underlying_category ))
+       HasCommutativeSemiringOfLinearCategory( underlying_category ))
       
       SetIsLinearCategoryOverCommutativeRing( adelman_category, true );
       
-      SetCommutativeRingOfLinearCategory( adelman_category, CommutativeRingOfLinearCategory( underlying_category ) );
+      SetCommutativeSemiringOfLinearCategory( adelman_category, CommutativeSemiringOfLinearCategory( underlying_category ) );
        
     end;
     
@@ -764,13 +764,13 @@ end );
         
     end );
     
-    if (ForAll( [ "MultiplyWithElementOfCommutativeRingForMorphisms" ],
+    if (ForAll( [ "MultiplyWithElementOfCommutativeSemiringForMorphisms" ],
                f -> CanCompute( underlying_category, f ) ))
         
-        AddMultiplyWithElementOfCommutativeRingForMorphisms( category,
+        AddMultiplyWithElementOfCommutativeSemiringForMorphisms( category,
           ( cat, r, alpha ) -> AdelmanCategoryMorphism( cat,
                               Source( alpha ),
-                              MultiplyWithElementOfCommutativeRingForMorphisms( r, UnderlyingMorphism( alpha ) ),
+                              MultiplyWithElementOfCommutativeSemiringForMorphisms( r, UnderlyingMorphism( alpha ) ),
                               Range( alpha )
                             )
         );

@@ -14,9 +14,9 @@ julia> dummy = DummyCategory( @rec(
 
 julia> field = HomalgFieldOfRationals( );
 
-julia> SetCommutativeRingOfLinearCategory( dummy, field )
+julia> SetCommutativeSemiringOfLinearCategory( dummy, field )
 
-julia> AddMultiplyWithElementOfCommutativeRingForMorphisms( dummy, ReturnNothing )
+julia> AddMultiplyWithElementOfCommutativeSemiringForMorphisms( dummy, ReturnNothing )
 
 julia> AddBasisOfExternalHom( dummy, ReturnNothing )
 

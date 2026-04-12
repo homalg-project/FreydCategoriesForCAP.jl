@@ -6,8 +6,8 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's FreydCategoriesForCAP v2025.12-02
-version = "0.1.16"
+# Transpiled from GAP's FreydCategoriesForCAP v2026.04-01
+version = "0.2.0"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
@@ -28,11 +28,11 @@ FreydCategoriesForCAPFinSetsForCAPExtension = ["CartesianCategories", "Toposes",
 [compat]
 julia = "1.11"
 MatricesForHomalg = "0.1"
-CAP = "0.6"
+CAP = "0.7"
 MonoidalCategories = "~0.2.11"
-LinearAlgebraForCAP = "~0.1.12"
-AdditiveClosuresForCAP = "~0.1.2"
-LinearClosuresForCAP = "0.1"
+LinearAlgebraForCAP = "0.2"
+AdditiveClosuresForCAP = "0.2"
+LinearClosuresForCAP = "0.2"
 CartesianCategories = "0.1, 0.2, 0.3"
 Toposes = "0.1"
 FinSetsForCAP = "0.3"
