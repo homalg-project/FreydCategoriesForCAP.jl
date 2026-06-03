@@ -6,7 +6,7 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's FreydCategoriesForCAP v2026.04-01
+# Transpiled from GAP's FreydCategoriesForCAP v2026.05-01
 version = "0.2.1"
 
 [deps]
