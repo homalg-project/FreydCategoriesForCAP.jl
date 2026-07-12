@@ -16,4 +16,6 @@ using LinearClosuresForCAP
 
 include("init.jl")
 
+include("post_init.jl")
+
 end # module FreydCategoriesForCAP
