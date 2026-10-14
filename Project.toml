@@ -9,6 +9,18 @@ authors = [
 # Transpiled from GAP's FreydCategoriesForCAP v2026.07-01
 version = "0.2.7"
 
+# Current dependencies of GAP's FreydCategoriesForCAP v2026.07-01
+# NeededOtherPackages:
+#   CAP >= 2026.07-03
+#   MatricesForHomalg >= 2026.04-01
+#   GradedRingForHomalg >= 2026.04-01
+#   AdditiveClosuresForCAP >= 2026.06-02
+#   LinearClosuresForCAP >= 2026.04-01
+#   MonoidalCategories >= 2025.08-01
+#   GeneralizedMorphismsForCAP >= 2018.06.15
+# SuggestedOtherPackages:
+#   FinSetsForCAP >= 2023.07-03
+
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
 CAP = "d64df2ee-d2bb-46f4-8cbc-f03bb858f8cb"

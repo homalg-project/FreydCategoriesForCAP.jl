@@ -97,7 +97,7 @@ end );
                [ IsInt, IsProSetAsCategory ],
 
   function( number_object, category )
-    ## TODO: sanity check: is number_object in the range (1):(n)?
+    ## TODO: sanity check: is number_object in the range [ 1 .. n ]?
 
     return CreateCapCategoryObjectWithAttributes( category,
                                                   UnderlyingInteger, number_object );
