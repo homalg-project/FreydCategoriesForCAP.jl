@@ -2,6 +2,8 @@
 ```jldoctest AutoDocTests
 julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP, AdditiveClosuresForCAP, LinearClosuresForCAP, CartesianCategories, Toposes, FinSetsForCAP, FreydCategoriesForCAP
 
+julia> # extracted from examples/AdelmanCategoryBasics.g
+
 julia> R = HomalgRingOfIntegers();
 
 julia> rows = CategoryOfRows( R );
@@ -93,6 +95,8 @@ true
 ```jldoctest AutoDocTests
 julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP, AdditiveClosuresForCAP, LinearClosuresForCAP, CartesianCategories, Toposes, FinSetsForCAP, FreydCategoriesForCAP
 
+julia> # extracted from examples/AdelmanCategoryBasics.g
+
 julia> R = HomalgRingOfIntegers();
 
 julia> cols = CategoryOfColumns( R );
@@ -179,6 +183,8 @@ true
 
 ```jldoctest AutoDocTests
 julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP, AdditiveClosuresForCAP, LinearClosuresForCAP, CartesianCategories, Toposes, FinSetsForCAP, FreydCategoriesForCAP
+
+julia> # extracted from examples/Prosets.g
 
 julia> K = [ [1, 1, 1], [0, 1, 1], [0, 1, 1] ];
 
